@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'astrid-regular': ['Astrid Grotesk Regular', 'sans-serif'],        
+        'astrid-light': ['Astrid Grotesk Light', 'sans-serif'],
+        'cormorant': ['Cormorant', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Astrid Grotesk Regular";
+    src: url("/public/fonts/astridgrotesk-regular.otf") format("OpenType");
+    font-weight: normal;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family: "Astrid Grotesk Light";
+    src: url("/public/fonts/astridgrotesk-light.otf") format("OpenType");
+    font-weight: normal;
+    font-style: normal;
+}    
