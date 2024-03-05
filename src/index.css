@@ -4,14 +4,19 @@
 
 @font-face {
     font-family: "Astrid Grotesk Regular";
-    src: url("/public/fonts/astridgrotesk-regular.otf") format("OpenType");
+    src: url("/fonts/astridgrotesk-regular.otf") format("OpenType");
     font-weight: normal;
     font-style: normal;
 }    
 
 @font-face {
     font-family: "Astrid Grotesk Light";
-    src: url("/public/fonts/astridgrotesk-light.otf") format("OpenType");
+    src: url("/fonts/astridgrotesk-light.otf") format("OpenType");
     font-weight: normal;
     font-style: normal;
 }    
+
+:root {
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+}
