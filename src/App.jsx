@@ -1,9 +1,22 @@
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Projeto from "./components/Projeto"
 import { projetos } from "./data/projetos";
+import Lenis from '@studio-freight/lenis'
 
 const App = () => {
-
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 2,
+    })
+    
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    
+    requestAnimationFrame(raf)
+  }, [])
 
   return (
     <>

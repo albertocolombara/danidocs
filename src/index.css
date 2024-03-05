@@ -16,7 +16,7 @@
     font-style: normal;
 }    
 
-:root {
-    scroll-behavior: smooth;
-    scroll-padding-top: 32px;
+html, body {
+    min-height: 100%;
+    height: auto;
 }

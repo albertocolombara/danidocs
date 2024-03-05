@@ -32,14 +32,6 @@ export const projetos = [
       onHoverPreview: "public/assets/preview/preview_itau.gif"
     },
     {
-      titulo: "MASH CAMPAIGN",
-      descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      ano: "2023",
-      categoria: "Moda",
-      image: "public/assets/images/img_mash.jpg",
-      onHoverPreview: "public/assets/preview/preview_mash.gif"
-    },
-    {
       titulo: "VIA UNO + GRAZI MASSAFERA",
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2022",
@@ -47,6 +39,14 @@ export const projetos = [
       image: "public/assets/images/img_viauno.jpg",
       onHoverPreview: "public/assets/preview/preview_viauno.gif",
       estilo: "col-span-2 row-span-2"
+    },
+    {
+      titulo: "MASH CAMPAIGN",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      ano: "2023",
+      categoria: "Moda",
+      image: "public/assets/images/img_mash.jpg",
+      onHoverPreview: "public/assets/preview/preview_mash.gif"
     },
     {
       titulo: "NEW ERA OCCULT + F&MWORKS",
