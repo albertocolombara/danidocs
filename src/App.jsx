@@ -9,6 +9,7 @@ const App = () => {
 
   const projetosFiltrados = filtro === "Todos os projetos" ? projetos : projetos.filter(projeto => projeto.categoria === filtro)
 
+
   const handleFiltro = (e) => {
     setFiltro(e.target.textContent)
   }
@@ -44,7 +45,7 @@ const App = () => {
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Backstage" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase`}>Backstage</li>
           </ul>
         </div>
-        <div className="grid grid-cols-4 grid-rows-[300px,300px,300px,300px] gap-y-[60px] gap-5">
+        <div className="grid grid-cols-4 grid-rows-[328px,328px,328px,328px] gap-5">
           {projetosFiltrados.map((projeto, index) => {
             return (
               <Projeto key={index} titulo={projeto.titulo} descricao={projeto.descricao} ano={projeto.ano} video={projeto.video} categoria={projeto.categoria} image={projeto.image} estilo={projeto.estilo} onhover={projeto.onHoverPreview} />

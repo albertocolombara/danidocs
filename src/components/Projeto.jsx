@@ -23,7 +23,7 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                     <h3 className="uppercase font-astrid-light truncate">{titulo}</h3>
                     <span className="text-sm text-neutral-500">{ano}</span>
                 </div>
-                <div className="h-full relative">
+                <div className={` ${estilo ? "h-[648px]" : "h-[300px]" } relative`}>
                     {image && 
                         <img alt={titulo + " Preview"} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)} className={`w-full h-full object-cover rounded-sm transition-opacity duration-300 ${previewActive ? 'opacity-100' : 'opacity-70'}`} src={ previewActive ? (onhover ?? image) : image}></img>
                     }
