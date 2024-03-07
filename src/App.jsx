@@ -32,8 +32,8 @@ const App = () => {
       <Header />
       <Loader />
 
-      <div className="bg-neutral-800 w-full h-[500px] rounded-xl flex items-center justify-center mb-20">
-        <h1 className="font-cormorant text-5xl uppercase font-light ">Diretor & Filmmaker</h1>
+      <div className="bg-neutral-800 w-full h-[500px] rounded-xl flex items-center justify-center mb-20 bg-[url('assets/preview/preview_carrano.gif')] bg-no-repeat bg-cover bg-center grayscale">
+        <h1 className="font-cormorant text-5xl uppercase font-light">Diretor & Filmmaker</h1>
       </div>
 
       <div id="projetos">

@@ -4,7 +4,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2023",
       categoria: "Esportes",
-      image: "/assets/images/img_asics.jpg",
+      image: "/assets/images/img_asics.webp",
       onHoverPreview: "/assets/preview/preview_asics.gif"
     },
     {
@@ -12,7 +12,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2022",
       categoria: "Moda",
-      image: "/assets/images/img_carrano.jpg",
+      image: "/assets/images/img_carrano.webp",
       onHoverPreview: "/assets/preview/preview_carrano.gif"
     },
     {
@@ -20,7 +20,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2022",
       categoria: "Moda",
-      image: "/assets/images/img_greenish.jpg",
+      image: "/assets/images/img_greenish.webp",
       onHoverPreview: "/assets/preview/preview_greenish.gif"
     },
     {
@@ -28,7 +28,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2023",
       categoria: "Backstage",
-      image: "/assets/images/img_itau.jpg",
+      image: "/assets/images/img_itau.webp",
       onHoverPreview: "/assets/preview/preview_itau.gif"
     },
     {
@@ -36,7 +36,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2022",
       categoria: "Moda",
-      image: "/assets/images/img_viauno.jpg",
+      image: "/assets/images/img_viauno.webp",
       onHoverPreview: "/assets/preview/preview_viauno.gif",
       estilo: "col-span-2 row-span-2"
     },
@@ -45,7 +45,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2023",
       categoria: "Moda",
-      image: "/assets/images/img_mash.jpg",
+      image: "/assets/images/img_mash.webp",
       onHoverPreview: "/assets/preview/preview_mash.gif"
     },
     {
@@ -53,7 +53,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2023",
       categoria: "Moda",
-      image: "/assets/images/img_neweraoccult.jpg",
+      image: "/assets/images/img_neweraoccult.webp",
       onHoverPreview: "/assets/preview/preview_neweraoccult.gif"
     },
     {
@@ -61,7 +61,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2023",
       categoria: "Moda",
-      image: "/assets/images/img_newerawinter.jpg",
+      image: "/assets/images/img_newerawinter.webp",
       onHoverPreview: "/assets/preview/preview_newerawinter.gif",
     },
     {
@@ -69,7 +69,7 @@ export const projetos = [
       descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       ano: "2022",
       categoria: "Esportes",
-      image: "/assets/images/img_zr11.jpg",
+      image: "/assets/images/img_zr11.webp",
       onHoverPreview: "/assets/preview/preview_zr11.gif"
     }
   ]
