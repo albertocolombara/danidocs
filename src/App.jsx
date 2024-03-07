@@ -56,7 +56,6 @@ const App = () => {
         </div>
       </div>
 
-      <div className="fixed top-0 left-0 pointer-events-none opacity-[.175] block h-screen w-screen bg-[url('assets/noise.gif')]"></div>
 
       <div id="sobre" className="border-t-2 border-t-neutral-800 my-20">
         <div className="flex mt-5">
@@ -67,6 +66,7 @@ const App = () => {
 
       <span className="font-cormorant uppercase text-2xl select-none text-center block my-4">Daniel Docs @ 2024</span>
 
+      <div className="fixed top-0 left-0 pointer-events-none opacity-[.175] block h-screen w-screen bg-[url('assets/noise.gif')] z-50"></div>
     </>
 
   )
