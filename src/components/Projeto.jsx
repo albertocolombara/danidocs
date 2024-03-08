@@ -23,9 +23,15 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                     <h3 className="uppercase font-astrid-light truncate tracking-wider">{titulo}</h3>
                     <span className="text-sm text-neutral-500">{ano}</span>
                 </div>
-                <div className={` ${estilo ? "h-[648px]" : "h-[300px]" } relative`}>
+                <div className={` ${estilo ? "h-[648px]" : "h-[300px]" } relative`} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)}>
+                    {previewActive &&
+                        <video autoPlay loop muted loading="lazy" className="w-full h-full object-cover rounded-sm">
+                            <source src={onhover} type="video/webm"/>
+                            Seu navegador não suporta o video.
+                        </video>
+                    }
                     {image && 
-                        <img alt={titulo + " Preview"} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)} className={`w-full h-full object-cover rounded-sm transition-opacity duration-300 ${previewActive ? 'opacity-100' : 'opacity-70'}`} src={ previewActive ? (onhover ?? image) : image}></img>
+                        <img alt={titulo + " Preview"} loading="lazy" className={`absolute top-0 left-0 w-full h-full object-cover rounded-sm opacity-70 ${previewActive ? 'hidden' : ''}`} src={image}></img>
                     }
                     {categoria && 
                         <span className="absolute bottom-2 right-2 bg-neutral-50 text-neutral-800 rounded-full font-astrid-light text-[12px] px-3 py-2 pb-1 uppercase">{categoria}</span>
