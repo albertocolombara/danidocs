@@ -32,21 +32,21 @@ const App = () => {
       <Header />
       <Loader />
 
-      <div className="bg-neutral-800 w-full h-[500px] rounded-xl flex items-center justify-center mb-20 bg-[url('assets/preview/preview_carrano.gif')] bg-no-repeat bg-cover bg-center grayscale">
-        <h1 className="font-cormorant text-5xl uppercase font-light">Diretor & Filmmaker</h1>
+      <div className="bg-neutral-800 w-full h-[500px] rounded-xl flex items-center justify-center mb-20 bg-[url('/assets/preview/preview_carrano_destaque.gif')] bg-no-repeat bg-cover bg-center grayscale">
+        <h1 className="font-cormorant text-5xl uppercase font-light text-center">Diretor & Filmmaker</h1>
       </div>
 
       <div id="projetos">
-        <div className="mb-12 flex items-center justify-between">
+        <div className="mb-12 flex items-center justify-between flex-col md:flex-row gap-5">
           <h2 className="text-4xl font-cormorant">Projetos</h2>
-          <ul className="flex gap-4 text-sm">
+          <ul className="flex gap-4 text-sm flex-wrap justify-center">
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Todos os projetos" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Todos os projetos</li>
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Moda" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Moda</li>
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Esportes" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Esportes</li>
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Backstage" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Backstage</li>
           </ul>
         </div>
-        <div className="grid grid-cols-4 grid-rows-[328px,328px,328px] gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-[328px,328px,328px] gap-4 md:gap-5">
           {projetosFiltrados.map((projeto, index) => {
             return (
               <Projeto key={index} titulo={projeto.titulo} descricao={projeto.descricao} ano={projeto.ano} video={projeto.video} categoria={projeto.categoria} image={projeto.image} estilo={projeto.estilo} onhover={projeto.onHoverPreview} />
@@ -66,7 +66,7 @@ const App = () => {
 
       <span className="font-cormorant uppercase text-2xl select-none text-center block my-4">Daniel Docs @ 2024</span>
 
-      <div className="fixed top-0 left-0 pointer-events-none opacity-[.175] block h-screen w-screen bg-[url('assets/noise.gif')] z-50"></div>
+      <div className="fixed top-0 left-0 pointer-events-none opacity-[.175] block h-screen w-screen bg-[url('/assets/noise.gif')] z-50"></div>
     </>
 
   )

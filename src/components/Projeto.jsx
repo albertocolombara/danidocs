@@ -20,7 +20,7 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
         <>
             <div className={`${estilo} h-full cursor-pointer`} onClick={handleOverlay}>
                 <div className="flex justify-between mb-1 text-neutral-400 items-center">
-                    <h3 className="uppercase font-astrid-light truncate">{titulo}</h3>
+                    <h3 className="uppercase font-astrid-light truncate tracking-wider">{titulo}</h3>
                     <span className="text-sm text-neutral-500">{ano}</span>
                 </div>
                 <div className={` ${estilo ? "h-[648px]" : "h-[300px]" } relative`}>
@@ -36,7 +36,12 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
             <div className="bg-neutral-950/85 w-screen h-screen fixed top-0 left-0 z-40" onClick={handleCloseOverlay}>
                 <div id="overlay" className="flex items-center justify-center flex-col gap-3 w-2/3 h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <div className="w-full">
-                        <img className="w-full max-h-[60vh] object-cover rounded-md" src={video ?? (onhover ?? image)}></img>
+                        {video &&   
+                            <iframe className="w-full max-h-[60vh] object-cover rounded-md" width="560" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        }
+                        {!video &&
+                            <img className="w-full max-h-[60vh] object-cover rounded-md" src={image}></img>
+                        }
                     </div>
                     <div className="bg-neutral-950 p-8 rounded-md w-full flex justify-between gap-5">
                         <div className="flex flex-col flex-1">
