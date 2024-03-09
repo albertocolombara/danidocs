@@ -34,7 +34,7 @@ const App = () => {
 
       <div className="bg-neutral-800 w-full h-[500px] rounded-xl flex items-center justify-center mb-20 grayscale relative">
         <h1 className="font-cormorant text-5xl uppercase font-light text-center z-10">Diretor & Filmmaker</h1>
-        <video autoPlay loop muted className="w-full h-full object-cover absolute top-0 left-0 rounded-xl">
+        <video autoPlay loop muted className="w-full h-full object-cover absolute top-0 left-0 rounded-xl" disablePictureInPicture>
           <source src="/assets/preview/preview_carrano_destaque.webm" type="video/webm"/>
           Seu navegador não suporta o video.
         </video>

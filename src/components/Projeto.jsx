@@ -25,7 +25,7 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                 </div>
                 <div className={` ${estilo ? "h-[648px]" : "h-[300px]" } relative`} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)}>
                     {previewActive &&
-                        <video autoPlay loop muted loading="lazy" className="w-full h-full object-cover rounded-sm">
+                        <video autoPlay loop muted loading="lazy" className="w-full h-full object-cover rounded-sm" disablePictureInPicture>
                             <source src={onhover} type="video/webm"/>
                             Seu navegador não suporta o video.
                         </video>

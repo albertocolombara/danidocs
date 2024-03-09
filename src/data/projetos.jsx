@@ -6,7 +6,7 @@ export const projetos = [
       categoria: "Esportes",
       image: "/assets/images/img_asics.webp",
       onHoverPreview: "/assets/preview/preview_asics.webm",
-      video: "https://www.youtube.com/embed/mI4Wu0Hx3Vc?si=kSFhJ2nK63w3S6dz"
+      video: "https://www.youtube.com/embed/EcmBziQd1Sc?si=s3t5AsWZzsghzSze&amp;controls=0"
     },
     {
       titulo: "VIA UNO + GRAZI MASSAFERA",
