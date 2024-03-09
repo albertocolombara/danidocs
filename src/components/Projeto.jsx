@@ -20,10 +20,10 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
         <>
             <div className={`${estilo} h-full cursor-pointer`} onClick={handleOverlay}>
                 <div className="flex justify-between mb-1 text-neutral-400 items-center">
-                    <h3 className="uppercase font-astrid-light truncate tracking-wider">{titulo}</h3>
-                    <span className="text-sm text-neutral-500">{ano}</span>
+                    <h3 className="uppercase font-astrid-light truncate tracking-wider text-sm md:text-base">{titulo}</h3>
+                    <span className="text-[10px] md:text-sm text-neutral-500">{ano}</span>
                 </div>
-                <div className={` ${estilo ? "h-[648px]" : "h-[300px]" } relative`} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)}>
+                <div className={`${estilo ? "h-[420px] md:h-[648px]" : "h-[200px] md:h-[300px]" } relative`} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)}>
                     {previewActive &&
                         <video autoPlay loop muted loading="lazy" className="w-full h-full object-cover rounded-sm" disablePictureInPicture>
                             <source src={onhover} type="video/webm"/>
@@ -34,7 +34,7 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                         <img alt={titulo + " Preview"} className={`absolute top-0 left-0 w-full h-full object-cover rounded-sm opacity-70 ${previewActive ? 'hidden' : ''}`} src={image}></img>
                     }
                     {categoria && 
-                        <span className="absolute bottom-2 right-2 bg-neutral-50 text-neutral-800 rounded-full font-astrid-light text-[12px] px-3 py-2 pb-1 uppercase">{categoria}</span>
+                        <span className="absolute bottom-2 right-2 bg-neutral-50 text-neutral-800 rounded-full font-astrid-light text-[10px] md:text-[12px] px-3 py-2 pb-1 uppercase">{categoria}</span>
                     }
                 </div>
             </div>
