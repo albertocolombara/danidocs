@@ -69,8 +69,6 @@ const App = () => {
             <p>Com referências de várias partes do mundo e uma mochila de ideias, comecei minha carreira na fotografia amadora, descobrindo o vídeo por meio de amigos e inspirações. Há 5 anos, trabalho com filmes e conteúdos digitais, além de pós-produção e direção em trabalhos especificamente nichados. Especializado em edição e direção de campanhas, a carreira que começou em Fortaleza-CE, se transferiu novamente para São Paulo-SP, onde estou fixado atualmente.</p>
             <p>Define your world in a whole new way (Defina seu mundo de uma maneira completamente nova) - é o que eu sempre dizia para os meus amigos durante grande parte da minha vida profissional. Essa foi a frase que me trouxe motivação para criar uma identidade diferenciada e específica aos meus filmes, identidade esta que representa a perspectiva enérgica, fluida e adaptável com a qual enxergo meus dias.</p>
           </div>
-          
-          
         </div>
       </div>
 
@@ -79,7 +77,8 @@ const App = () => {
         <div className="flex mt-5 flex-col md:flex-row gap-3 md:gap-0">
           <h2 className="flex-1 font-cormorant text-4xl">Contato</h2>
           <div className="flex-1 font-astrid-light text-neutral-400 space-y-4">
-           
+           <p className="text-neutral-400"><span className="text-neutral-50">E-mail |</span> contato@danidocs.com.br</p>
+           <a href="https://instagram.com/danidocs" target="blank" className="text-neutral-50 hidden sm:block transition-opacity duration-750 hover:opacity-70">Instagram | <span className="text-neutral-400">@danidocs</span></a>
           </div>
           
           
