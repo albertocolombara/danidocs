@@ -1,9 +1,18 @@
 import { useState } from "react";
 
-const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, video }) => {
+const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, video, video2, video3 }) => {
     const [previewActive, setPreviewActive] = useState(false)
     const [overlayActive, setOverlayActive] = useState(false)
+    const [videoShowing, setVideoShowing] = useState(1)
     
+    const handleVideo = () => {
+        if(videoShowing === 2) {
+            return video2;
+        } else if (videoShowing === 3) {
+            return video3
+        } else return video;
+    }
+
     const handleOverlay = () => {
         setOverlayActive(!overlayActive)
     }
@@ -13,6 +22,7 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
         const overlayElement = overlayId.parentElement
         if (e.target === overlayElement) {
             setOverlayActive(!overlayActive)
+            setVideoShowing(1)
         }
     }
 
@@ -43,7 +53,7 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                 <div id="overlay" className="flex items-center justify-center flex-col gap-3 w-full p-5 lg:w-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <div className="w-full md:h-[60vh] h-[30vh]">
                         {video &&   
-                            <iframe className="w-full h-full object-cover rounded-md" width="560" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className="w-full h-full object-cover rounded-md" width="560" src={handleVideo()} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         }
                         {!video &&
                             <img className="w-full h-full object-cover rounded-md" src={image}></img>
@@ -55,6 +65,12 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                             <span className="text-sm font-astrid-light text-neutral-400">{ano} // {categoria}</span>
                         </div>
                         <span className="md:flex-[2] text-neutral-500">{descricao}</span>
+                        <div className="flex flex-col md:items-end gap-1 text-neutral-400">
+                            <span onClick={() => setVideoShowing(1)} className="cursor-pointer">Video 1</span>
+                            {video2 && <span onClick={() => setVideoShowing(2)} className="cursor-pointer">Video 2</span>}
+                            {video3 && <span onClick={() => setVideoShowing(3)} className="cursor-pointer">Video 3</span>}
+                        </div>
+
                     </div>
                 </div>
                 {/* <span className="absolute bottom-5 left-1/2 -translate-x-1/2 text-2xl cursor-pointer" onClick={handleOverlay}>Fechar</span> */}
