@@ -1,5 +1,15 @@
 export const projetos = [
     {
+      titulo: "CARRANO + RAFA KALIMANN",
+      descricao: "Direção e Direção Criativa, além de edição para Carrano. Lançamento de sua embaixadora Rafa Kalimann.",
+      ano: "2022",
+      categoria: "Moda",
+      image: "/assets/images/img_carrano.webp",
+      onHoverPreview: "/assets/preview/preview_carrano_destaque.webm",
+      video: "https://www.youtube.com/embed/moDOUHEhr1U?si=vjIXHCwhjTpayiIX",
+      estilo: "col-span-2 row-span-2"
+    },
+    {
       titulo: "MESSS + ASICS 2023 BTS CAMPAIGN",
       descricao: "BTS de campanha idealizada pela agência MESSS para Asics Brasil.",
       ano: "2023",
@@ -28,6 +38,16 @@ export const projetos = [
       video_2: "https://www.youtube.com/embed/HMePQdNNlto?si=bnPg2bwlw9oDrU_k"
     },
     {
+      titulo: "RECHBERGER + ZEREZES",
+      descricao: "Influ Publi to Zerezes. With Rapha Rechberger.",
+      ano: "2024",
+      categoria: "Moda",
+      image: "/assets/images/img_zerezes.webp",
+      onHoverPreview: "/assets/preview/preview_zerezes.webm",
+      video: "https://www.youtube.com/embed/DK2fHxk9fZY?si=qaOvOCKtmsOR9VoO",
+      estilo: "row-span-2"
+    },
+    {
       titulo: "SEMBABOZERA + ITAÚ",
       descricao: "Direção e edição de vídeo case para agência Sem Babozera.",
       ano: "2023",
@@ -35,16 +55,6 @@ export const projetos = [
       image: "/assets/images/img_itau.webp",
       onHoverPreview: "/assets/preview/preview_itau.webm",
       video: "https://www.youtube.com/embed/tAxCxypfIVo?si=LQc2bMHpTxfRMh4K"
-    },
-    {
-      titulo: "CARRANO + RAFA KALIMANN",
-      descricao: "Direção e Direção Criativa, além de edição para Carrano. Lançamento de sua embaixadora Rafa Kalimann.",
-      ano: "2022",
-      categoria: "Moda",
-      image: "/assets/images/img_carrano.webp",
-      onHoverPreview: "/assets/preview/preview_carrano_destaque.webm",
-      video: "https://www.youtube.com/embed/moDOUHEhr1U?si=vjIXHCwhjTpayiIX",
-      estilo: "col-span-2 row-span-2"
     },
     {
       titulo: "MASH CAMPAIGN",
@@ -84,5 +94,5 @@ export const projetos = [
       onHoverPreview: "/assets/preview/preview_zr11.webm",
       video: "https://www.youtube.com/embed/ykcEoygn5kw?si=7IBdlZxrtRpHA0X2",
       video_2: "https://www.youtube.com/embed/NNX96P3qrsE?si=rUE_-tKAMc1IkNec"
-    }
+    },
   ]
