@@ -7,7 +7,7 @@ export const projetos = [
       image: "/assets/images/img_carrano.webp",
       onHoverPreview: "/assets/preview/preview_carrano_destaque.webm",
       video: "https://www.youtube.com/embed/moDOUHEhr1U?si=vjIXHCwhjTpayiIX",
-      estilo: "col-span-2 row-span-2"
+      estilo: "col-span-2 row-span-2 h-[440px] md:h-[648px]"
     },
     {
       titulo: "MESSS + ASICS 2023 BTS CAMPAIGN",
@@ -45,7 +45,20 @@ export const projetos = [
       image: "/assets/images/img_zerezes.webp",
       onHoverPreview: "/assets/preview/preview_zerezes.webm",
       video: "https://www.youtube.com/embed/DK2fHxk9fZY?si=qaOvOCKtmsOR9VoO",
-      estilo: "row-span-2"
+      estilo: "row-span-2 h-[440px] md:h-[648px]"
+    },
+    {
+      titulo: "COLEÇÃO REFLEXOS",
+      descricao: "",
+      ano: "2024",
+      categoria: "Moda",
+      image: "/assets/images/img_reflexos.webp",
+      onHoverPreview: "/assets/preview/preview_reflexos.webm",
+      video: "https://www.youtube.com/embed/LZEn96hKhxA?si=IjiPL2B50P8kLhuL",
+      video_2: "https://www.youtube.com/embed/LNOVYZagKL0?si=y8i3hHwc9Tfh_7fW",
+      video_3: "https://www.youtube.com/embed/r7hpzexCKDs?si=z2ZG1En-0FzYbRLc",
+      video_4: "https://www.youtube.com/embed/GhX4aK_OE5U?si=23T5DqHFkDRrpqGY",
+      estilo: "row-span-2 h-[440px] md:h-[648px]"
     },
     {
       titulo: "SEMBABOZERA + ITAÚ",
@@ -63,9 +76,20 @@ export const projetos = [
       categoria: "Moda",
       image: "/assets/images/img_mash.webp",
       onHoverPreview: "/assets/preview/preview_mash.webm",
-      video: "https://www.youtube.com/embed/tuwzlRSPOD0?si=ABOaTL9d5zse-Cqb",
-      video_2: "https://www.youtube.com/embed/rR-QsuQxwxI?si=Bnez2kquuNuP2rgt",
-      video_3: "https://www.youtube.com/embed/iJgD8KM0crU?si=Ot4Y77xjlANM63Zc"
+      video: "https://www.youtube.com/embed/EhdtkEZKqRE?si=rfNwqc-5Bhwu8-bT",
+      video_2: "https://www.youtube.com/embed/tuwzlRSPOD0?si=ABOaTL9d5zse-Cqb",
+      video_3: "https://www.youtube.com/embed/rR-QsuQxwxI?si=Bnez2kquuNuP2rgt",
+      video_4: "https://www.youtube.com/embed/iJgD8KM0crU?si=Ot4Y77xjlANM63Zc"
+    },
+    {
+      titulo: "WEPINK - BALLET - VF",
+      descricao: "",
+      ano: "2024",
+      categoria: "Color",
+      image: "/assets/images/img_wepink.webp",
+      onHoverPreview: "/assets/preview/preview_wepink.webm",
+      video: "https://www.youtube.com/embed/Z-Cmrm96ftE?si=-xQxV0hAV2Wtyx9O",
+      estilo: "col-span-2 row-span-1 h-[200px] md:h-[300px]"
     },
     {
       titulo: "NEW ERA OCCULT + F&MWORKS",
@@ -75,6 +99,17 @@ export const projetos = [
       image: "/assets/images/img_neweraoccult.webp",
       onHoverPreview: "/assets/preview/preview_neweraoccult.webm",
       video: "https://www.youtube.com/embed/cUqahY2NVQc?si=BUKwvQ25m8Lu4yXa"
+    },
+    {
+      titulo: "LIZ MANIFEST - COLOR",
+      descricao: "",
+      ano: "2024",
+      categoria: "Color",
+      image: "/assets/images/img_lizmanifest.webp",
+      onHoverPreview: "/assets/preview/preview_lizmanifest.webm",
+      video: "https://www.youtube.com/embed/ykcEoygn5kw?si=7IBdlZxrtRpHA0X2",
+      video_2: "https://www.youtube.com/embed/B4TZF08WSNI?si=U2wsioeC_nDEszQN",
+      estilo: "col-span-2 row-span-1 h-[200px] md:h-[300px]"
     },
     {
       titulo: "NEW ERA WINTER COLLECTION",
@@ -94,5 +129,5 @@ export const projetos = [
       onHoverPreview: "/assets/preview/preview_zr11.webm",
       video: "https://www.youtube.com/embed/ykcEoygn5kw?si=7IBdlZxrtRpHA0X2",
       video_2: "https://www.youtube.com/embed/NNX96P3qrsE?si=rUE_-tKAMc1IkNec"
-    },
+    }
   ]

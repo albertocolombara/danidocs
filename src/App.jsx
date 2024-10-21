@@ -48,12 +48,13 @@ const App = () => {
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Moda" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Moda</li>
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Esportes" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Esportes</li>
             <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Backstage" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Backstage</li>
+            <li onClick={handleFiltro} className={`cursor-pointer border border-neutral-600 ${filtro === "Color" ? "bg-neutral-800" : ""} flex justify-center items-center rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light hover:bg-neutral-800 uppercase transition-all`}>Color</li>
           </ul>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
           {projetosFiltrados.map((projeto, index) => {
             return (
-              <Projeto key={index} titulo={projeto.titulo} descricao={projeto.descricao} ano={projeto.ano} video={projeto.video} categoria={projeto.categoria} image={projeto.image} estilo={projeto.estilo} onhover={projeto.onHoverPreview} video2={projeto.video_2} video3={projeto.video_3} />
+              <Projeto key={index} titulo={projeto.titulo} descricao={projeto.descricao} ano={projeto.ano} video={projeto.video} categoria={projeto.categoria} image={projeto.image} estilo={projeto.estilo} onhover={projeto.onHoverPreview} video2={projeto.video_2} video3={projeto.video_3} video4={projeto.video_4}/>
             )
           })}
 
@@ -77,11 +78,9 @@ const App = () => {
         <div className="flex mt-5 flex-col md:flex-row gap-3 md:gap-0">
           <h2 className="flex-1 font-cormorant text-4xl">Contato</h2>
           <div className="flex-1 font-astrid-light text-neutral-400 space-y-4">
-           <p className="text-neutral-400"><span className="text-neutral-50">E-mail |</span> contato@danidocs.com.br</p>
-           <a href="https://instagram.com/danidocs" target="blank" className="text-neutral-50 hidden sm:block transition-opacity duration-750 hover:opacity-70">Instagram | <span className="text-neutral-400">@danidocs</span></a>
+           <p className="text-neutral-400"><span className="text-neutral-50">E-mail |</span> thedocs.co@gmail.com</p>
+           <a href="https://instagram.com/danidocs" target="blank" className="text-neutral-50 sm:block transition-opacity duration-750 hover:opacity-70">Instagram | <span className="text-neutral-400">@danidocs</span></a>
           </div>
-          
-          
         </div>
       </div>
 

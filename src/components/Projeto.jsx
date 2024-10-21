@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, video, video2, video3 }) => {
+const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, video, video2, video3, video4 }) => {
     const [previewActive, setPreviewActive] = useState(false)
     const [overlayActive, setOverlayActive] = useState(false)
     const [videoShowing, setVideoShowing] = useState(1)
@@ -10,6 +10,8 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
             return video2;
         } else if (videoShowing === 3) {
             return video3
+        } else if (videoShowing === 4) {
+            return video4
         } else return video;
     }
 
@@ -28,14 +30,14 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
 
     return (
         <>
-            <div className={`${estilo} h-full cursor-pointer`} onClick={handleOverlay}>
+            <div className={`${estilo ?? ''} object-cover h-full cursor-pointer`} onClick={handleOverlay}>
                 <div className="flex justify-between mb-1 text-neutral-400 items-center">
                     <h3 className="uppercase font-astrid-light truncate tracking-wider text-sm md:text-base">{titulo}</h3>
                     <span className="text-[10px] md:text-sm text-neutral-500">{ano}</span>
                 </div>
-                <div className={`${estilo ? "h-[420px] md:h-[648px]" : "h-[200px] md:h-[300px]" } relative`} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)}>
+                <div className={`${estilo ? estilo : "h-[200px] md:h-[300px]"} relative`} onMouseOver={() => setPreviewActive(true)} onMouseOut={() => setPreviewActive(false)}>
                     {previewActive &&
-                        <video autoPlay loop muted loading="lazy" className="w-full h-full object-cover rounded-sm" disablePictureInPicture>
+                        <video autoPlay loop muted playsInline loading="lazy" className="w-full h-full object-cover rounded-sm touch-none pointer-events-none" disablePictureInPicture>
                             <source src={onhover} type="video/webm"/>
                             Seu navegador não suporta o video.
                         </video>
@@ -65,10 +67,11 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                             <span className="text-sm font-astrid-light text-neutral-400">{ano} // {categoria}</span>
                         </div>
                         <span className="md:flex-[2] text-neutral-500">{descricao}</span>
-                        <div className="flex flex-col md:items-end gap-1 text-neutral-400">
-                            <span onClick={() => setVideoShowing(1)} className="cursor-pointer">Video 1</span>
-                            {video2 && <span onClick={() => setVideoShowing(2)} className="cursor-pointer">Video 2</span>}
-                            {video3 && <span onClick={() => setVideoShowing(3)} className="cursor-pointer">Video 3</span>}
+                        <div className="flex flex-wrap md:items-end gap-1 text-neutral-400">
+                            <span onClick={() => setVideoShowing(1)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 1</span>
+                            {video2 && <span onClick={() => setVideoShowing(2)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 2</span>}
+                            {video3 && <span onClick={() => setVideoShowing(3)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 3</span>}
+                            {video4 && <span onClick={() => setVideoShowing(4)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 4</span>}
                         </div>
 
                     </div>
