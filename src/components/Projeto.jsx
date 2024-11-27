@@ -68,10 +68,10 @@ const Projeto = ({ estilo, titulo, ano, categoria, image, onhover, descricao, vi
                         </div>
                         <span className="md:flex-[2] text-neutral-500">{descricao}</span>
                         <div className="flex flex-wrap md:items-end gap-1 text-neutral-400">
-                            <span onClick={() => setVideoShowing(1)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 1</span>
-                            {video2 && <span onClick={() => setVideoShowing(2)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 2</span>}
-                            {video3 && <span onClick={() => setVideoShowing(3)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 3</span>}
-                            {video4 && <span onClick={() => setVideoShowing(4)} className="cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800">Video 4</span>}
+                            <span onClick={() => setVideoShowing(1)} className={`${videoShowing === 1 ? "bg-neutral-700" : ""} cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800 transition-all ease-in-out`}>Video 1</span>
+                            {video2 && <span onClick={() => setVideoShowing(2)} className={`${videoShowing === 2 ? "bg-neutral-700" : ""} cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800 transition-all ease-in-out`}>Video 2</span>}
+                            {video3 && <span onClick={() => setVideoShowing(3)} className={`${videoShowing === 3 ? "bg-neutral-700" : ""} cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800 transition-all ease-in-out`}>Video 3</span>}
+                            {video4 && <span onClick={() => setVideoShowing(4)} className={`${videoShowing === 4 ? "bg-neutral-700" : ""} cursor-pointer rounded-full px-4 pt-3 pb-2 text-neutral-400 font-astrid-light bg-neutral-900 hover:bg-neutral-800 transition-all ease-in-out`}>Video 4</span>}
                         </div>
 
                     </div>

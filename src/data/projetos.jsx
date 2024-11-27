@@ -7,7 +7,7 @@ export const projetos = [
       image: "/assets/images/img_carrano.webp",
       onHoverPreview: "/assets/preview/preview_carrano_destaque.webm",
       video: "https://www.youtube.com/embed/moDOUHEhr1U?si=vjIXHCwhjTpayiIX",
-      estilo: "col-span-2 row-span-2 h-[440px] md:h-[648px]"
+      estilo: "col-span-2 row-span-2 h-[440px] md:h-[648px] -order-1"
     },
     {
       titulo: "MESSS + ASICS 2023 BTS CAMPAIGN",
@@ -28,16 +28,6 @@ export const projetos = [
       video: "https://www.youtube.com/embed/LN7GO3AmuQY?si=ubvQoUQrlyymJM82"
     },
     {
-      titulo: "GREENISH INNER PARADISE CAMPAIGN",
-      descricao: "Direção e edição de campanha para Greenish em dueto com The Dudes Club.",
-      ano: "2022",
-      categoria: "Moda",
-      image: "/assets/images/img_greenish.webp",
-      onHoverPreview: "/assets/preview/preview_greenish.webm",
-      video: "https://www.youtube.com/embed/EmHQQoBcp4I?si=Ys-A5WNE7h0SnhNT",
-      video_2: "https://www.youtube.com/embed/HMePQdNNlto?si=bnPg2bwlw9oDrU_k"
-    },
-    {
       titulo: "RECHBERGER + ZEREZES",
       descricao: "Influ Publi to Zerezes. With Rapha Rechberger.",
       ano: "2024",
@@ -46,6 +36,16 @@ export const projetos = [
       onHoverPreview: "/assets/preview/preview_zerezes.webm",
       video: "https://www.youtube.com/embed/DK2fHxk9fZY?si=qaOvOCKtmsOR9VoO",
       estilo: "row-span-2 h-[440px] md:h-[648px]"
+    },
+    {
+      titulo: "GREENISH INNER PARADISE CAMPAIGN",
+      descricao: "Direção e edição de campanha para Greenish em dueto com The Dudes Club.",
+      ano: "2022",
+      categoria: "Moda",
+      image: "/assets/images/img_greenish.webp",
+      onHoverPreview: "/assets/preview/preview_greenish.webm",
+      video: "https://www.youtube.com/embed/EmHQQoBcp4I?si=Ys-A5WNE7h0SnhNT",
+      video_2: "https://www.youtube.com/embed/HMePQdNNlto?si=bnPg2bwlw9oDrU_k"
     },
     {
       titulo: "COLEÇÃO REFLEXOS",
@@ -89,7 +89,7 @@ export const projetos = [
       image: "/assets/images/img_wepink.webp",
       onHoverPreview: "/assets/preview/preview_wepink.webm",
       video: "https://www.youtube.com/embed/Z-Cmrm96ftE?si=-xQxV0hAV2Wtyx9O",
-      estilo: "col-span-2 row-span-1 h-[200px] md:h-[300px]"
+      estilo: "col-span-2 row-span-1 h-[200px] md:h-[300px] row-start-7 md:row-start-auto"
     },
     {
       titulo: "NEW ERA OCCULT + F&MWORKS",
@@ -107,8 +107,7 @@ export const projetos = [
       categoria: "Color",
       image: "/assets/images/img_lizmanifest.webp",
       onHoverPreview: "/assets/preview/preview_lizmanifest.webm",
-      video: "https://www.youtube.com/embed/ykcEoygn5kw?si=7IBdlZxrtRpHA0X2",
-      video_2: "https://www.youtube.com/embed/B4TZF08WSNI?si=U2wsioeC_nDEszQN",
+      video: "https://www.youtube.com/embed/B4TZF08WSNI?si=U2wsioeC_nDEszQN",
       estilo: "col-span-2 row-span-1 h-[200px] md:h-[300px]"
     },
     {
